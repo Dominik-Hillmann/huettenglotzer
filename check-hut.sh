@@ -20,10 +20,5 @@ if [ "$num_free_beds" -gt 1 ]; then
     -d "There are now $num_free_beds beds available at the hut." \
     ntfy.sh/$NTFY_TOPIC
 else
-  curl \
-    -H "Title: Check for free beds" \
-    -H "Tags: sleeping_bed" \
-    -H "Priority: min" \
-    -d "Currently no beds available." \
-    ntfy.sh/$NTFY_TOPIC
+  echo "No beds available."
 fi
