@@ -1,0 +1,6 @@
+schedule: "*/30 * * * *"
+image:
+  repository: dominikhillmann/huettenglotzer
+  tag: 0.3.0
+  pullPolicy: IfNotPresent
+namespace: huettenglotzer-prod

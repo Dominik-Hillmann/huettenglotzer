@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker build -t "dominikhillmann/huettenglotzer:$(cat VERSION)" .
+docker buildx build --platform linux/amd64 -t "dominikhillmann/huettenglotzer:$(cat VERSION)" .
